@@ -1,0 +1,32 @@
+## 1 Creating Managing Slice
+
+- npm i @reduxjs/toolkit
+- npm i react-redux
+
+- Created
+  => "store"
+  => "cart-slice.js"
+  => "ui-slice.js"
+
+  => Added/Implemented Redux to the Project
+
+* import { createSlice } from '@reduxjs/toolkit'
+  => To create "slice"
+
+* import { configureStore } from "@reduxjs/toolkit";
+  => To create "store" in the main component
+
+* import { Provider } from "react-redux";
+  => To provide "store" to our application
+  => Added to the highest level component => "index.js"
+  => <Provider store={store}>
+
+* import { useDispatch } from "react-redux";
+  => To dispatch/call reducer functions
+  => "CartButton.js"
+
+* import { useSelector } from "react-redux";
+  => To get/extract Data from store/slice
+  => "App.js"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
