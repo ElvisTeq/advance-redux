@@ -4,7 +4,7 @@ import Products from "./components/Shop/Products";
 import Notification from "./components/UI/Notification";
 import { useSelector, useDispatch } from "react-redux";
 import React, { useEffect } from "react";
-import { sendCartData } from "./store/cart-slice";
+import { sendCartData, fetchCartData } from "./store/cart-actions";
 
 let isInitial = true; // Places outside "App()" So it wont reset when is called again
 
@@ -13,6 +13,10 @@ function App() {
   const showCart = useSelector((state) => state.ui.cartIsVisible); // Extracting value from slice
   const cart = useSelector((state) => state.cart); // Get cart data
   const notification = useSelector((state) => state.ui.notification); // Extracting value from slice (ui because of "index.js")
+
+  useEffect(() => {
+    dispatch(fetchCartData());
+  }, [dispatch]);
 
   useEffect(() => {
     if (isInitial) {
