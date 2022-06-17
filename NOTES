@@ -39,3 +39,23 @@
 
 --------------------------------------------------------- { method: 'PUT' }
 fetch method => to post data, or override if exist
+
+**\*** ERROR **\***
+When loading app for the first time is causing useEffent() to run with a empthy "cart"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Handling Errors
+
+- "Notification.js"
+  => Component for notification message window
+
+- "ui-slice.js"
+  => added reducer for "showNotification()" for "App.js" to use
+
+- "App.js"
+  => added Async/Await to useEffect() & handling err
+  => useDispatch() to use "showNotification()" => to show different notification states based on error
+
+**\*** FIX **\***
+Preventing useEffect() to run for the first time
