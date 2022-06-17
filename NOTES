@@ -30,3 +30,12 @@
   => "App.js"
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 2 Redux & Async code
+
+- "App.js"
+  => useSelector() to get DATA
+  => useEffect() to fetch { method: "PUT"} DATA to the backend
+
+--------------------------------------------------------- { method: 'PUT' }
+fetch method => to post data, or override if exist
