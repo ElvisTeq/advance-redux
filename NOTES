@@ -101,3 +101,9 @@ Cart data is seding automatically when loading for the first time
 - 'cart-actions.js"
   => Fixed bug of Item undefined when cart is empthy when page loads
   => manually setting values to "initialCartState", to avoid "Item undefined" if (!cartData)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Redux DevTools
+
+- Using Redux DevTools to debug and check Redux details
