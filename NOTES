@@ -59,3 +59,19 @@ When loading app for the first time is causing useEffent() to run with a empthy 
 
 **\*** FIX **\***
 Preventing useEffect() to run for the first time
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 4 Using an Action Creator Thunk
+
+Reason to use (to keep component clean)
+
+---------------------------------------------- Thunk
+A function that delays an action until later
+Implemented => "cart-slice.js"
+
+- "App.js"
+  => Replaced useEffect() into "Thunk" Function
+
+- "cart-slice.js"
+  => Created "Thunk" function "sendCardData()"
