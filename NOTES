@@ -88,3 +88,16 @@ Implemented => "cart-slice.js"
   => Created Thunk Function for fetching "get" data and display it
 
   - Thunk Function are use in "App.js"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Fixing the fetching logic & bugs
+
+Cart data is seding automatically when loading for the first time
+
+- "cart-slice.js"
+  => Added to the "initialState" new property (true/false) to prevent Cart data to be sent on first page load
+
+- 'cart-actions.js"
+  => Fixed bug of Item undefined when cart is empthy when page loads
+  => manually setting values to "initialCartState", to avoid "Item undefined" if (!cartData)

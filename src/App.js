@@ -24,8 +24,11 @@ function App() {
       return;
     }
 
-    // sendCartData() => Thunk Function (To call the function in another component, so this component in cleaner)
-    dispatch(sendCartData(cart));
+    // True => if "addItemToCart()" or "removeItemFromCart()"
+    if (cart.changed) {
+      // sendCartData() => Thunk Function (To call the function in another component, so this component in cleaner)
+      dispatch(sendCartData(cart));
+    }
   }, [cart, dispatch]);
 
   return (
